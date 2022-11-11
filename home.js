@@ -60,7 +60,7 @@ const canWeDeliver =(zipCode)=>{
         console.log(`Sorry, we can't deliver to that address`)
     }
 }
-canWeDeliver(84206)
+canWeDeliver(85205)
 
 /* 
     Problem 2 Continued
@@ -81,6 +81,17 @@ canWeDeliver(84206)
 
 // CODE HERE
 
+
+function canWeDeliverTwo(zipCode){
+for(let i = 0; i < deliveryAreaZipCodes.length; i++){
+    if(deliveryAreaZipCodes[i] === zipCode){
+      return `You're in our delivery zone!`
+    }else{
+       return `Sorry, we can't deliver to that address`
+    }
+    } 
+}
+console.log(canWeDeliverTwo(89205))
 
 //////////////////PROBLEM 3////////////////////
 /* 
