@@ -117,8 +117,9 @@ const deals = [
 */
 
 //CODE HERE
+const newDeals = deals.map(deal=> deal.title.replace("15", "10"))
 
-
+console.log(newDeals)
 
 /*
     The restaurant is going to continue its
@@ -134,3 +135,6 @@ const deals = [
 */
 
 //CODE HERE
+
+const secondDeal = deals.map(deal => deal.desc.trim().replace("March", "April"))
+console.log(secondDeal)
