@@ -101,7 +101,7 @@ console.log(calcFinalPrice(75, 10, 0.06))
 
 const customer ={
     name: 'Leo',
-    quantity: 4,
+    totalOfPeople: 4,
     table: 3, 
     orders: ['pizza', 'coke', 'pasta']
 
