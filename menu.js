@@ -205,20 +205,20 @@ console.log(filtered)
 // nums.filter(function isEven(num) {
 //     return num % 2 === 0;
 //   });
-const filterByProperty=(property, number, type)=>{
-let newArray = foodArr.filter((el)=>{
-     if(el[type] === 'above' ){
-      return el[property] > el[number]
-    }else el[type] != 'below'
-    return el[property] < el[number]
+const filterByProperty = (property, number, type)=>{
+let newArray = foodArr.filter(food =>{
+   if(type === 'above'){
+    return food[property] > number
+   }else 
+   return food[property] < number
 }
    
 )
 return newArray
 }
 
-console.log(filterByProperty(foodArr.popularity, 3, 'above'))
-/*
+console.log(filterByProperty('price', 18, 'above'))
+/*Ï
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
 
