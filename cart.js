@@ -56,8 +56,9 @@ console.log(summedPrice)
 
 //CODE HERE
 const calcFinalPrice = (cartTotal,couponValue, tax)=>{
-   
+   return cartTotal * tax + cartTotal - couponValue   
 }
+console.log(calcFinalPrice(75, 10, 0.06))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -83,6 +84,12 @@ const calcFinalPrice = (cartTotal,couponValue, tax)=>{
 /*
     TEXT ANSWER HERE
 
+    name = how to call customer, data type string, because it's letters 
+    quantity = to know where to fit them, which table will be best for their group of size, data type Number()
+    tableNumber = to attach their orders in the system to easily serve, data type Number()
+    orders = can be array of strings, since name of food
+
+
 */
 
 /*
@@ -91,3 +98,11 @@ const calcFinalPrice = (cartTotal,couponValue, tax)=>{
 */
 
 //CODE HERE
+
+const customer ={
+    name: 'Leo',
+    quantity: 4,
+    table: 3, 
+    orders: ['pizza', 'coke', 'pasta']
+
+}
